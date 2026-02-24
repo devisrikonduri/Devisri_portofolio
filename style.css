@@ -1,0 +1,83 @@
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family: 'Inter' , sans-serif;
+    background-color:white;
+}
+
+#intro{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 20px;
+    
+}
+#name{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+#about{
+     padding :50px;
+     background-color:rgba(187, 187, 220, 0.253);
+     color:rgba(255, 255, 255, 0.679);
+     border-radius: 30px;
+     box-shadow: 3px 3px 10px rgba(231, 225, 225, 0.497);
+     margin-bottom: 40px;
+    }
+#about h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#about p{
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+#project{
+    padding: 50px;
+    background-color:rgba(187, 187, 220, 0.253);
+    color:rgba(255, 255, 255, 0.679);
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(231, 225, 225, 0.497);
+}
+#project-container{
+   display:flex;
+    gap: 20px;
+
+}
+.p{
+    flex:1;
+    background-color:rgba(255, 255, 255, 0.679);
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size:1.5em;
+    
+    
+
+}
+h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+ 
