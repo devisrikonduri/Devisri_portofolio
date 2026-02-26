@@ -78,7 +78,7 @@ body{
 #about p{
 
     line-height: 2;
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 5s ease-in-out infinite;
     opacity:0;
     animation-fill-mode: forwards;
     font-style: italic;
@@ -118,13 +118,22 @@ img{
     content: "";
     position: absolute;
     inset: -15px;
-    border-radius: 45%;
+    border-radius: 40%;
     background:linear-gradient(45deg, #00f5ff,#8a2be2, #ff00cc);
     filter: blur(35px);
     z-index: -1;
+    animation:float 3s ease-in-out infinite;
+    
     
 }
-
+@keyframes float{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
 #mystatus{
     font-size: 2em;
     margin-bottom: 20px;
