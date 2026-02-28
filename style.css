@@ -53,7 +53,6 @@ body{
     background:
         linear-gradient(
         45deg,
-        rgba(109, 92, 105, 0.88),
         rgba(15, 23, 47, 0.989),
         rgba(7, 12, 27, 0.997)
         ),
@@ -120,20 +119,12 @@ img{
     inset: -15px;
     border-radius: 40%;
     background:linear-gradient(45deg, #00f5ff,#8a2be2, #ff00cc);
-    filter: blur(35px);
     z-index: -1;
-    animation:float 3s ease-in-out infinite;
     
     
 }
-@keyframes float{
-    0%,100%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-20px);
-    }
-}
+
+
 #mystatus{
     font-size: 2em;
     margin-bottom: 20px;
@@ -184,9 +175,7 @@ img{
     padding: 50px;
     background:
      linear-gradient(
-      45deg,
-      rgba(147, 131, 143, 0.88),
-        rgba(15, 23, 47, 0.989),
+      45deg, rgba(15, 23, 47, 1),
         rgba(5, 11, 26, 0.997)
     ),url("space.jpg");
     color:rgb(238, 237, 237);
