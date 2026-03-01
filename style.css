@@ -17,13 +17,11 @@ html{
 }
 
 #intro{
-    height:100vh;
     display:flex;
     align-items: flex-start;
     justify-content: flex-start;
     color: white;
-    position:relative;
-    margin:-20px;
+    
     
 }
 #name{
@@ -39,6 +37,8 @@ html{
     left:0px;
     font-size: 2em;
     font-family: 'Allura', cursive;
+    z-index:100;
+    color:white;
 
 }
 #description{
@@ -89,11 +89,12 @@ html{
     backdrop-filter: blur(25px);
    -webkit-backdrop-filter: blur(25px);
 
-  border-radius: 25px;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-bottom:1px solid rgba(255,255,255,0.02);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-bottom:1px solid rgba(255,255,255,0.02);
 
- box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    z-index:100;
 }
 
 
@@ -116,6 +117,12 @@ html{
     
 }
 
+.section{
+    height:100vh;
+    position:sticky;
+    top:0px;
+}
+
 
     
 
@@ -123,8 +130,8 @@ html{
 
   
   background:
-    radial-gradient(circle at 10% 80%, rgba(2, 5, 95, 0.236), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(0, 75, 225, 0.047), transparent 50%),
+    radial-gradient(circle at 10% 80%, rgba(2, 5, 79, 0.236), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(6, 24, 62, 0.047), transparent 50%),
     #0b0f0e;
 
 
@@ -168,4 +175,10 @@ html{
     box-shadow:0px 8px 25px rgba(225 ,225,225,0.17);
 
 }
-
+#skills{
+    background:linear-gradient(to bottom right, rgba(255,255,255,0.08),rgba(255,255,255,0.03)); 
+    backdrop-filter: blur(30px); /* very light */
+    border-radius: 15px;
+    border:1px solid rgba(225 ,225,225,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+}
