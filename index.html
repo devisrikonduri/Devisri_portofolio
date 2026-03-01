@@ -9,89 +9,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
 <body>
-    <video autoplay muted loop  playsinline src="back2.mp4" id="myVideo"></video>
+
+     <nav id="navbar">
+                <a  class="navbar-content" href="#projects">My builds</a>
+                <a class ="navbar-content" href="#skills">Strengths</a>
+                <a class="navbar-content" href="#contact">Contact</a>
+                <a class="navbar-content" href ="#intro">My space</a>
+     </nav>
+
+
+            <div id="greet">welcome to my space</div>
 
    
 
 
-    <section id="intro">
-        <h2 id="greet">welcome to my space</h2>
+    <section id="intro" class="section">
+         <div><video autoplay muted loop  playsinline src="back2.mp4" id="myVideo"></video></div>
 
-        <div id="nav">
-            <div id="msp" class="n r" ><a href="#about">myspace</a></div>
-            <div id ="skl" class="n r"><a href="#skills">skills</a></div>
-            <div id="prj" class="n r"><a href="#project">projects</a></div>
-            <div id="cnt" class="n"><a href="#contact">contact</a></div>
-        </div>
-
-        <h1 id="name">Devisri lakshmi</h1>
-        <p> Curious mind. Logical thinker. Consistent builder</p>
-    </section>
-
-    <section id="about">
-        <div id="content" class="candi">
-        <h2>About me</h2>
+   
         
-        <p id="mystatus">Applied AI student</p>
-        <p id ="myschool"> kalvium X talshashila</p>
-        <p>Intrested in code , design ,logicbuild</p>
-<p>aiming to build wonderfull tech applications  </p>
-</div>
+        <h1 id="name">Devisri lakshmi</h1>
+        <p id="description"> Curious mind. Logical thinker. Consistent builder</p>
+       
+        <div id="scroll-indicator">
+            <span class="arrow">&#x2304</span></div>
 
-
-
-<div id="imgc" class="candi"><img src="myself.jpeg" alt="profile"></div>
-
+        
     </section>
+    <section class="extra"></section>
+
+    <section id="projects" class="section"> 
+        <h2 class ="section-heading">Builds</h2>
+        
 
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div id="skills-container">
-            <div class="skill"><h4>Python</h4></div>
+        <div id="project-cards-container">
+
+        <div class="project-cards" id="project1">
+
+
+            </div>
+
+      <div class="project-cards" id="project2">
+            </div>
+
+      <div class="project-cards" id="project3">
+
+            </div>
+
+            <div class="project-cards" id="project4">
+
+            </div>
+        </div>
+
             
-            <div class="skill"><h4>C++</h4></div>
-            <div class="skill"><h4>CSS</h4></div>
-            <div class="skill"><h4>HTML</h4></div>
-            <div class="skill"><h4>JavaScript</h4></div>
-        </div>
-        </section>
-
-
-    <section id="project">
-        <h2>Projects</h2>
-        <div id="project-container">
-            <div id="1" class="p">platformjumper</div>
-            <div id="2" class="p">collabry</div>
-            <div id="3" class="p">upcoming</div>
-    </div>
-            
-    </section>
-
-
-    <section id="contact">
-        <h2>Contacts</h2>
-        <div id="contact-container">
-        <div id="email" class="contact-cards">
-            <h5>Email</h5>
-            <p>devisreekonduri5@gmail.com</p>
-            <p2>copy email</p2>
-        </div>
-
-        <div id="linkedin" class="contact-cards">
-            <h5>LinkedIn</h5>
-            <p><a href="https://www.linkedin.com/in/devisri-konduri-99377b391/">visit</a></p>
-        </div>
-
-        <div id="github" class="contact-cards">
-            <h5>GitHub</h5>
-            <p><a href="https://github.com/devisrikonduri">visit</a></p>
-       </div>
-       </div>
-
-    </section>
-    <script src="script.js"></script>
         
     
-</body>
-</html>
+    
+    </section>
+    <section class="extra"></section>
+
+    <section id="skills" class="section"></section>
+    <script src="app.js"></script>
+
+  </body>
