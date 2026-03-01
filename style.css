@@ -110,12 +110,14 @@ html{
     border:none;
 }
 
-.navbar-content:active{
-    background-color: rgba(255,255,255,1);
+.navbar-content:focus{
+    color:rgba(255,255,255,0.8);
+    border-bottom:1px solid rgba(255,255,255,0.8);
+    
 }
 
 
-
+    
 
 #projects{
 
@@ -157,13 +159,13 @@ html{
     border-radius: 15px;
     border:1px solid rgba(225 ,225,225,0.1);
     box-shadow: 0 8px 32px rgba(0,0,0,0.37);
-    transition:transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+    transition:transform 0.5s ease-in-out,box-shadow 0.3s ease-in-out;
 
 }
 
 .project-cards:hover{
     transform:scale(1.1);
-    box-shadow:0px 8px 32px rgba(225 ,225,225,0.17);
+    box-shadow:0px 8px 25px rgba(225 ,225,225,0.17);
 
 }
 
