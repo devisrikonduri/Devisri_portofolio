@@ -186,7 +186,7 @@ html{
     backdrop-filter: blur(30px); /* very light */
     border-radius: 15px;
     border:1px solid rgba(39, 27, 80, 0.1);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    box-shadow: 3px 6px 4px rgba(25, 2, 117, 0.37);
     transition:transform 0.5s ease-in-out,box-shadow 0.3s ease-in-out;
     padding:10px;
 
@@ -194,7 +194,7 @@ html{
 
 .project-cards:hover{
     transform:scale(1.1);
-    box-shadow:0px 8px 25px rgba(1, 15, 97, 0.43);
+    box-shadow:0px 8px 40px rgba(1, 15, 97, 0.43);
 
 }
 
@@ -246,6 +246,7 @@ h4{
     left:170px;
 
 }
+
 
 #skills{
     margin-top: 50px;
