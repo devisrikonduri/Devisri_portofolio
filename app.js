@@ -15,8 +15,7 @@ async function loadProjects() {
 
       <div class="project-description">
         <h4>${project.title}</h4>
-        <p>${project.description}</p>
-        <a href="${project.live}" class="project-link">view</a>
+        <a href="${project.live}" class="project-link">&#8605</a>
       </div>
     `;
 
