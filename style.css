@@ -175,52 +175,41 @@ ul{
 #projects{
 
   
-    position:relative;    
+  position:relative;
+background: linear-gradient(
+135deg,
+#020617 0%,
+#040b1f 35%,
+#0a1f4d 50%,
+#040b1f 65%,
+#020617 100%
+);
 
-background: radial-gradient(
-    circle at 40% 35%,
-    #0b1f4d 0%,
-    #050b1f 40%,
-    #020617 80%
-  );
+    background-size: 400% 400%;
+    animation: gradientSlide 14s ease-in-out infinite;
+
     overflow: hidden;
-   
-   min-height:100vh;
-   padding:45px;
+    min-height:100vh;
+    padding:45px;
     margin:50px auto;
-    border :1px solid rgba(202, 201, 229, 0.151) ;
+    border:1px solid rgba(202, 201, 229, 0.151);
 }
 
-#projects::before{
- content:"";
-  position:absolute;
-  width:700px;
-  height:700px;
-  background: radial-gradient(circle, rgba(17, 62, 135, 0.25), transparent 70%);
-  top:30%;
-  left:30%;
-  filter:blur(120px);
-  animation: glowMove 5s ease-in-out infinite alternate;
-
+@keyframes gradientSlide{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
 }
 
-@keyframes glowMove{
-  0%{
-    transform: translate(0px,0px);
-  }
-  25%{
-    transform: translate(250px,80px);
-  }
-  50%{
-    transform: translate(450px,200px);
-  }
-  75%{
-    transform: translate(200px,300px);
-  }
-  100%{
-    transform: translate(0px,0px);
-  }
-}
+
+
+
 
 .project-cards::after{
     content:"";
