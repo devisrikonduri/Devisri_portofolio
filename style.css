@@ -324,14 +324,63 @@ h4{
 
 
 #skills{
-    margin:50px auto;
+margin:50px auto;
  background: linear-gradient(
 135deg,
 #050812 0%,
 #040e25 40%,
 #000308 100%
 );
-       backdrop-filter: blur(30px); /* very light */
-    border:1px solid rgba(225 ,225,225,0.1);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+ backdrop-filter: blur(30px); /* very light */
+ border:1px solid rgba(225 ,225,225,0.1);
+ box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+ height:fit-content;
+
+  
+
+
+}
+#skills-container{
+    padding:50px;
+    gap:50px;
+    width:100%;
+    
+}
+#skills-list{
+    display:flex;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    gap:30px;
+    scroll-behavior: smooth;
+    padding:50px;
+    border:1px solid white;
+}
+
+
+
+
+
+
+.skill-card {
+  background: rgba(255,255,255,0.03);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  height:200px;
+  width:150px;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+.icon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+#skills.section {
+  min-height: fit-content;
 }
