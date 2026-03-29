@@ -1,0 +1,8 @@
+[
+  { "name": "Figma", "icon": "figma.png" },
+  { "name": "HTML", "icon": "html.png" },
+  { "name": "CSS", "icon": "css.png" },
+  { "name": "JavaScript", "icon": "js.png" },
+  { "name": "C++", "icon": "cpp.png" },
+  { "name": "Python", "icon": "python.png" }
+]

@@ -48,3 +48,24 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+async function loadSkills() {
+  const res = await fetch("skills.json");
+  const data = await res.json();
+
+  const container = document.getElementById("skills-list");
+
+  data.forEach(skill => {
+    const card = document.createElement("div");
+    card.classList.add("skill-card");
+
+    card.innerHTML = `
+      <img src="${skill.icon}" class="icon"/>
+      <h3>${skill.name}</h3>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+loadSkills();
