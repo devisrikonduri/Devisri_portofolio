@@ -1,8 +1,10 @@
 [
-  { "name": "Figma", "icon": "figma.png" },
-  { "name": "HTML", "icon": "html.png" },
-  { "name": "CSS", "icon": "css.png" },
-  { "name": "JavaScript", "icon": "js.png" },
-  { "name": "C++", "icon": "cpp.png" },
-  { "name": "Python", "icon": "python.png" }
+  { "name": "HTML", "icon": "html.png", "category": "web" },
+  { "name": "CSS", "icon": "css.png", "category": "web" },
+  { "name": "JavaScript", "icon": "js.png", "category": "web" },
+  { "name": "C++", "icon": "cpp.png", "category": "programming" },
+  { "name": "Python", "icon": "python.png", "category": "programming" },
+  { "name": "React", "icon": "react.png", "category": "web" },
+  { "name": "Figma", "icon": "figma.png", "category": "design" },
+  { "name": "canva", "icon": "canva.png", "category": "design" }
 ]

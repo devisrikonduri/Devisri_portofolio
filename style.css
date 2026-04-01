@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin:0px;
     padding:0px;
+    font-family:'Orbitron', serif;
 }
 
 body{
@@ -29,6 +30,10 @@ html::-webkit-scrollbar-thumb {
   border-radius: 50px;
   
 }
+#description{
+    font-family: 'Inter', serif;
+}
+
     
 
     
@@ -168,7 +173,9 @@ ul{
    min-height:100vh;
   
 }
-
+#skills.section {
+  min-height: fit-content;
+}
 
     
 
@@ -235,12 +242,10 @@ background: linear-gradient(
 }
 
 .section-heading{
-    font-family: 'Space Grotesk', sans-serif;
     font-size: 46px;
-    font-style:italic;
     font-weight: 700;
     margin-bottom: 30px;
-color:#4DA3FF;
+    color:#4DA3FF;
     letter-spacing:-1px;
     text-shadow:0 0 15px rgba(77,163,255,0.4);
 
@@ -342,45 +347,41 @@ margin:50px auto;
 }
 #skills-container{
     padding:50px;
-    gap:50px;
+    gap:30px;
     width:100%;
+    display:flex;
+    width:100%;
+
     
 }
-#skills-list{
-    display:flex;
-    justify-content: space-evenly;
-    overflow-x: auto;
-    gap:30px;
-    scroll-behavior: smooth;
-    padding:50px;
-    border:1px solid white;
+
+.subheading{
+    font-size: 25px;
+    color: #4DA3FF;
+    margin-bottom: 40px;
+}
+.skills-div{
+    flex:1;
+    text-align:center;
+    border:1px solid rgba(77, 163, 255, 0.15);
+    padding:20px;
+    margin-bottom: 50px;
+}
+
+.skills-row{
+   display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    padding:10px;
+
+}
+.skill-card h3{
+     font-size:14px;
+     margin-bottom: 10px;
 }
 
 
-
-
-
-
-.skill-card {
-  background: rgba(255,255,255,0.03);
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  transition: 0.3s;
-  height:200px;
-  width:150px;
-}
-
-.skill-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(0,255,255,0.2);
-}
-
-.icon {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-#skills.section {
-  min-height: fit-content;
+.skill-card img{
+    width:50px;
+    height:60px;
 }

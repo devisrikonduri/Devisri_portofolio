@@ -53,7 +53,9 @@ async function loadSkills() {
   const res = await fetch("skills.json");
   const data = await res.json();
 
-  const container = document.getElementById("skills-list");
+  const webContainer = document.getElementById("web-skills");
+  const progContainer = document.getElementById("programming-skills");
+  const designContainer = document.getElementById("design-skills");
 
   data.forEach(skill => {
     const card = document.createElement("div");
@@ -64,7 +66,13 @@ async function loadSkills() {
       <h3>${skill.name}</h3>
     `;
 
-    container.appendChild(card);
+    if (skill.category === "web") {
+      webContainer.appendChild(card);
+    } else if (skill.category === "programming") {
+      progContainer.appendChild(card);
+    } else if (skill.category === "design") {
+      designContainer.appendChild(card);
+    }
   });
 }
 
